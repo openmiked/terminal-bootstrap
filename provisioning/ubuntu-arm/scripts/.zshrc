@@ -15,21 +15,19 @@ CASE_SENSITIVE="false"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_MAGIC_FUNCTIONS="true"
 ENABLE_CORRECTION="true"
-MY_NI='eth0'
 MY_OS_ICON='\uf31b' # 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 ZSH="$HOME/.oh-my-zsh"
 
 source $ZSH/oh-my-zsh.sh
 source <(kubectl completion zsh)
-source $HOME/.cli-config/functions.sh
-source $HOME/.cli-config/p9k-config.sh
-source $HOME/.cli-config/aliases.sh
+source $HOME/.zsh-configs/functions.sh
+source $HOME/.zsh-configs/prompt.sh
+source $HOME/.zsh-configs/aliases.sh
 source $(dirname $(gem which colorls))/tab_complete.sh
 source "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel9k/powerlevel9k.zsh-theme"
 
 compdef _git printGitLogPrettily=git-log
-compdef kubecolor=kubectl
 
 eval "$(direnv hook zsh)"
 
