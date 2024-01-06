@@ -1,0 +1,22 @@
+    #--- Terraform Helpers ---#
+alias tfdebug='export TF_LOG=DEBUG'
+alias tf='terraform'
+alias tfa='terraform apply'
+alias tfav='terraform apply --var-file=.env.tfvars'
+alias tfd='terraform destroy'
+alias tfdoc='terraform-docs markdown table --output-file README.md --output-mode inject ./'
+alias tff='terraform fmt'
+alias tffr='terraform fmt --recursive'
+alias tfi='terraform init'
+alias tfpl='terraform plan'
+alias tfs='terraform show'
+alias tft='terraform taint'
+
+    #--- AWS Vault - Management Terraform Helpers ---#
+alias tfm='aws-vault exec management -- terraform'
+alias tfma='aws-vault exec management -- terraform apply'
+alias tfmd='aws-vault exec management -- terraform destroy'
+alias tfmi='aws-vault exec management -- terraform init'
+alias tfmp='aws-vault exec management -- terraform plan'
+alias tfms='aws-vault exec management -- terraform show'
+alias tfmt='aws-vault exec management -- terraform taint'

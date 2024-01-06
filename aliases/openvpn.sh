@@ -1,0 +1,10 @@
+    #--- OpenVPN Linux Client Helpers ---#
+alias vpn='openvpn3'
+alias vpnci='openvpn3 config-import'
+alias vpncid='openvpn3 config-import -n default -c'
+alias vpncl='openvpn3 configs-list'
+alias vpncr='openvpn3 config-remove'
+alias vpnsm='openvpn3 session-manage'
+alias vpnss='openvpn3 session-start'
+alias vpnssd='openvpn3 session-start -c default'
+alias vpnsl='openvpn3 sessions-list'
